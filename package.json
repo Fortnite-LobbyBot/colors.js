@@ -1,7 +1,7 @@
 {
-    "name": "colors",
+    "name": "@fnlb-project/colors",
     "description": "get colors in your node.js console",
-    "version": "1.4.44-liberty-2",
+    "version": "1.4.45",
     "author": "Marak Squires",
     "contributors": [
         {
@@ -9,6 +9,9 @@
             "url": "https://github.com/DABH"
         }
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "homepage": "https://github.com/Marak/colors.js",
     "bugs": "https://github.com/Marak/colors.js/issues",
     "keywords": [
@@ -30,7 +33,6 @@
     },
     "main": "lib/index.js",
     "files": [
-        "examples",
         "lib",
         "LICENSE",
         "safe.js",
@@ -39,7 +41,7 @@
         "safe.d.ts"
     ],
     "devDependencies": {
-        "eslint": "^5.2.0",
-        "eslint-config-google": "^0.11.0"
+        "eslint": "^9.16.0",
+        "eslint-config-google": "^0.14.0"
     }
 }

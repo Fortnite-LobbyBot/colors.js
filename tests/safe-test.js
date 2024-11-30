@@ -17,8 +17,7 @@ var stylesColors = ['white', 'black', 'blue', 'cyan', 'green', 'magenta',
                     'brightGreen', 'brightBlue', 'brightWhite', 'brightCyan',
                     'brightMagenta'];
 // eslint-disable-next-line
-var stylesAll = stylesColors.concat(['bold', 'italic', 'underline', 'inverse',
-  'rainbow']);
+var stylesAll = stylesColors.concat(['bold', 'italic', 'underline', 'inverse']);
 
 colors.mode = 'console';
 assert.equal(colors.bold(s), '\x1B[1m' + s + '\x1B[22m');
@@ -27,7 +26,6 @@ assert.equal(colors.underline(s), '\x1B[4m' + s + '\x1B[24m');
 assert.equal(colors.strikethrough(s), '\x1B[9m' + s + '\x1B[29m');
 assert.equal(colors.inverse(s), '\x1B[7m' + s + '\x1B[27m');
 
-assert.ok(colors.rainbow);
 
 aE(s, 'white', 37);
 aE(s, 'grey', 90);

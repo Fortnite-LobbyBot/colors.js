@@ -1,5 +1,4 @@
 module['exports'] = {
-  silly: 'rainbow',
   input: 'grey',
   verbose: 'cyan',
   prompt: 'grey',

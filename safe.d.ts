@@ -39,10 +39,3 @@ export function underline(str: string): string;
 export function inverse(str: string): string;
 export function hidden(str: string): string;
 export function strikethrough(str: string): string;
-
-export function rainbow(str: string): string;
-export function zebra(str: string): string;
-export function america(str: string): string;
-export function trap(str: string): string;
-export function random(str: string): string;
-export function zalgo(str: string): string;

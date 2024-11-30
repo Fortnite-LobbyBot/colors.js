@@ -37,13 +37,6 @@ export interface Color {
     inverse: Color;
     hidden: Color;
     strikethrough: Color;
-
-    rainbow: Color;
-    zebra: Color;
-    america: Color;
-    trap: Color;
-    random: Color;
-    zalgo: Color;
 }
 
 export function enable(): void;
@@ -84,13 +77,6 @@ export const inverse: Color;
 export const hidden: Color;
 export const strikethrough: Color;
 
-export const rainbow: Color;
-export const zebra: Color;
-export const america: Color;
-export const trap: Color;
-export const random: Color;
-export const zalgo: Color;
-
 declare global {
     interface String {
         strip: string;
@@ -125,12 +111,5 @@ declare global {
         inverse: string;
         hidden: string;
         strikethrough: string;
-
-        rainbow: string;
-        zebra: string;
-        america: string;
-        trap: string;
-        random: string;
-        zalgo: string;
     }
 }

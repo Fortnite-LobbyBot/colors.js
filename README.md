@@ -156,7 +156,6 @@ console.log(colors.green('Hello %s'), name);
 var colors = require('colors');
 
 colors.setTheme({
-  silly: 'rainbow',
   input: 'grey',
   verbose: 'cyan',
   prompt: 'grey',

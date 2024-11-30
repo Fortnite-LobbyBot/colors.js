@@ -22,7 +22,7 @@ var stylesColors = ['white', 'black', 'blue', 'cyan', 'green', 'magenta',
 
 // eslint-disable-next-line
 var stylesAll = stylesColors.concat(['bold', 'italic', 'underline',
-  'inverse', 'rainbow']);
+  'inverse']);
 
 colors.mode = 'console';
 assert.equal(s.bold, '\x1B[1m' + s + '\x1B[22m');
@@ -30,14 +30,6 @@ assert.equal(s.italic, '\x1B[3m' + s + '\x1B[23m');
 assert.equal(s.underline, '\x1B[4m' + s + '\x1B[24m');
 assert.equal(s.strikethrough, '\x1B[9m' + s + '\x1B[29m');
 assert.equal(s.inverse, '\x1B[7m' + s + '\x1B[27m');
-
-assert.ok(s.rainbow);
-
-assert.equal(colors.stylize("foo", "rainbow"), '\u001b[31mf\u001b[39m\u001b[33mo\u001b[39m\u001b[32mo\u001b[39m');
-assert.ok(colors.stylize(s, "america"));
-assert.ok(colors.stylize(s, "zebra"));
-assert.ok(colors.stylize(s, "trap"));
-assert.ok(colors.stylize(s, "random"));
 
 aE(s, 'white', 37);
 aE(s, 'grey', 90);
